@@ -1,4 +1,2 @@
-
-privacy-policy/.vs/privacy-policy/FileContentIndex/6e4d746e-4a25-4a4a-a903-dfbb85d412ef.vsidx
-privacy-policy/.vs/slnx.sqlite
-privacy-policy/.vs/privacy-policy/FileContentIndex/f46909ac-9338-4567-8e1e-f8350c7c346c.vsidx
+*.vsidx
+*.sqlite
