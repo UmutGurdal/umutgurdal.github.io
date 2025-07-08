@@ -25,17 +25,17 @@
 
         t.card('id', 'name')
             .then(function (card) {
-                document.getElementById('cardInfo').innerText = `Kart adı: ${card.name}`;
+                document.getElementById('cardInfo').innerText = `Card Name: ${card.name}`;
             });
 
         window.TrelloPowerUp.initialize({
             'card-buttons': function (t, options) {
                 return [{
                     icon: 'https://cdn-icons-png.flaticon.com/512/25/25694.png',
-                    text: 'Merhaba',
+                    text: 'Hello',
                     callback: function (t) {
                         return t.popup({
-                            title: "Power-Up Aktif!",
+                            title: "Power-Up Activated!",
                             url: t.signUrl('./powerup.html'),
                             height: 200
                         });
