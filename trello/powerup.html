@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Trello Power-Up</title>
+    <script src="https://p.trellocdn.com/power-up.min.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 16px;
+        }
+
+        .content {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Merhaba Trello!</h2>
+    <div class="content" id="cardInfo">Kart bilgisi yükleniyor...</div>
+
+    <script>
+        const t = TrelloPowerUp.iframe();
+
+        t.card('id', 'name')
+            .then(function (card) {
+                document.getElementById('cardInfo').innerText = `Kart adı: ${card.name}`;
+            });
+
+        window.TrelloPowerUp.initialize({
+            'card-buttons': function (t, options) {
+                return [{
+                    icon: 'https://cdn-icons-png.flaticon.com/512/25/25694.png',
+                    text: 'Merhaba',
+                    callback: function (t) {
+                        return t.popup({
+                            title: "Power-Up Aktif!",
+                            url: t.signUrl('./powerup.html'),
+                            height: 200
+                        });
+                    }
+                }];
+            }
+        });
+    </script>
+</body>
+</html>

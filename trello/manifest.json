@@ -1,0 +1,14 @@
+{
+  "name": "My Power-Up",
+  "description": "Basit bir Trello Power-Up",
+  "author": "Şeho",
+  "iframeConnectorUrl": "https://seninsiten.com/trello/powerup.html",
+  "capabilities": {
+    "card-buttons": [
+      {
+        "text": "Merhaba",
+        "callback": "showButtonPopup"
+      }
+    ]
+  }
+}
