@@ -1,8 +1,5 @@
 OWNERDOMAIN=umutgurdal.dev
-ironsrc.com, 1fc659ef5, Direct
-ironsrc.com, 1fc65656d, Direct
-ironsrc.com, 1fc652be5, Direct
-ironsrc.com, *********, Direct
+ironsrc.com, 347961, Direct
 google.com, pub-4576392375384968, DIRECT, f08c47fec0942fa0
 
 rubiconproject.com, 24400, RESELLER, 0bfd66d529a55807
